@@ -1,0 +1,499 @@
+/****************************partie du header****************************/
+
+header {
+    
+    background-color: #2977d1;
+    height: 200px;
+    position: relative;
+    width: 100%;
+
+    
+}
+
+#BoiteTitre{
+    position: absolute;
+    height: 140px;
+    width: 100%;
+}
+
+#Titre_principal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#Quentin {
+
+    font-size: 30px; 
+    margin: 0;
+    
+    color: rgb(255, 255, 255);
+    
+}
+
+#Bienvenue{
+    position: absolute;
+    font-size: 20px; 
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 1%;
+    color: white;
+    font-style: italic;
+    bottom: 10%;
+    
+}
+
+/****************************Navigation****************************/
+
+#BarreLiens{
+    
+    position: absolute;
+    height: 60px;
+    background: #33F2BF;
+    width: 100%;
+    bottom: 0;
+    display: flex; 
+    justify-content: center;
+    
+}
+
+#Liens{
+    width: 100%;    
+    
+}
+
+/*espace entre les liens*/
+#Liens ul{
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+      
+    
+}
+    
+/*decoration du texte des liens*/    
+#Liens li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    
+
+}
+
+#Liens li{
+    width: 150px;
+    height: 30px;
+    background-color: #2bb993;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px ;
+    transition: trasform 0.4s ease, background-color 0.5s ease; 
+}
+
+#Liens li:hover {
+    transform: scale(1.1); 
+    outline: 2px solid white; 
+    outline-offset: 2px; 
+    background-color: #148f6e;
+
+}
+
+
+/****************************centre de la page****************************/
+
+/*#centre{
+    width: 100%;
+    margin-left: auto;
+    height: 1000px;
+    margin-right: auto;
+    margin-top: 0;
+    
+    
+}
+*/
+/*toute la section 1*/
+#section1 {
+     
+    margin-left: auto;
+    margin-right: auto; 
+    display: flex;
+    justify-content: space-around;
+    width: auto;
+    height: auto;
+    max-width: 1200px;
+    
+    border-bottom: 1px solid black;
+
+    width: 100%; /* ou une largeur fixe */
+    height: auto; /* ou une hauteur fixe, si vous voulez un ratio précis */
+    overflow: hidden; /* évite que l'image dépasse du div */
+    position: relative;
+}
+
+#article1 {
+    margin-top: 4%;
+    width: 50%;
+}
+
+#citation{
+    bottom: 5%;
+    font-size: 25px; 
+    font-style: italic;
+    padding-bottom: 5%;
+    margin-bottom: 0;
+}
+
+#image {
+    padding-right: 2%;
+    
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    
+    width: 30%;
+    height: 30%;
+    border-radius: 5px;
+    display: block;
+    
+    object-fit: contain; 
+    
+    
+
+}
+
+#Présentation{
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 2%;
+}
+
+#texte{
+    text-align: justify;
+    margin-right: 3%;
+    padding-bottom: 5%;
+    
+}
+
+/*toute la section 2*/
+
+#section2 {
+    margin-top: 1%; 
+    margin-left: auto;
+    margin-right: auto; 
+    max-width: 1200px;
+    width: 90%;
+    height: auto;
+    border-bottom: 1px solid black;
+    
+    
+    
+   
+}
+/*compétences logo*/
+#compétences{
+    font-size: 30px;
+    margin-top: 1%;
+    text-align: center;
+    margin-bottom: 2%;
+    
+    
+}
+
+#boiteLogos{
+    width: 100%; 
+    max-width: 100%; 
+    height: 150px;
+    background:rgb(255, 255, 255);
+    border-radius: 30px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    overflow: hidden; /* Empêche les images de dépasser la boîte */
+}
+
+#logos img {
+    max-width: 15%; 
+    height: auto; 
+    object-fit: contain; 
+    flex-shrink: 1; 
+}
+
+#logos{
+    perspective: 1000px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+#python{
+    width: auto;
+    height: auto;
+}
+
+
+#sql{
+        width: auto;
+        height: auto;
+}
+
+
+#css,#html,#tux,#python,#sql{
+    transition: transform 0.2s ease-in-out; /* Animation fluide */
+    transform-style: preserve-3d; /* Garde l'effet 3D */
+}
+
+#css:hover,#html:hover,#tux:hover,#python:hover,#sql:hover{
+    transform: rotateY(-50deg) rotateX(5deg); /* Rotation de l'image sur l'axe Y */
+
+}
+
+/* Compétences texte */
+
+/* Le rectangle bleu */
+#boiteCompétences {
+    height: auto;
+    min-width: auto;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%; 
+    background-color: #2977d1;
+    border-radius: 30px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+    display: flex;         
+    flex-direction: column; 
+    gap: 10px; 
+    margin-bottom: 30px; 
+    
+}
+
+/* La boite contenant la compétence */
+.boiteCompetence{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: auto;
+    width: auto;
+    
+    transition: transform 0.3s ease; 
+}
+
+/* Effet de zoom au survol */
+.boiteCompetence:hover,.boiteCss:hover {
+    transform: scale(1.05); 
+}
+
+
+/* La boite contenant la couleur */
+.boiteCouleur{
+    
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto; 
+    height: auto;
+    width: 90%;
+    background-color: white;
+    border-radius: 10px;
+    display: flex; 
+    align-items: center; 
+    justify-content: left;
+    padding: 0 10px; 
+       
+}
+
+/* Paramètrage du texte dans la boite */
+.boiteCouleurP{
+    margin-left: 20px;
+    font-family: 'Arial', sans-serif; 
+    font-size: 16px; 
+    line-height: 1.6; 
+    color: #333; 
+    
+}
+
+/* La boite contenant la compétence spécifique au bloc Css */
+.boiteCss{
+    margin-top: 10px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: auto;
+    width: auto;
+    position: relative;
+    transition: transform 0.3s ease; 
+}
+
+/* Effet de survol */
+#boiteCouleurPython:hover, #boiteCouleurLinux:hover, #boiteCouleurSQL:hover, #boiteCouleurHTML:hover, #boiteCouleurCSS:hover {
+    background-color: #f0f0f0; /* Change la couleur de fond au survol */
+    
+}
+
+/**************toute la section 3***************/
+#section3 {
+    margin-top: 1%; 
+    margin-left: auto;
+    margin-right: auto; 
+    max-width: 1200px;
+    width: 90%;
+    height: auto;
+    border-bottom: 1px solid black;  
+}
+
+#titreProjet{
+    font-size: 30px;
+    margin-top: 1%;
+    text-align: center;
+    margin-bottom: 2%;
+    
+    
+}
+
+#conteneurProjets{
+    width: auto; 
+     
+    height: auto;
+
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    
+    
+}
+
+#conteneurProjets h2{
+    height: auto;
+    width: 100%;
+    
+    text-align: center;
+    margin-top: 10px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid black;
+    border-radius: 1px;
+    
+    
+    
+}
+
+.projet{
+    width: 30%; 
+    
+    height: auto;
+    background:rgb(255, 255, 255);
+    border-radius: 30px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+    
+    display: flex;         
+    flex-direction: column; 
+    align-items: center; 
+    
+    overflow: hidden; /* Empêche les images de dépasser la boîte */
+    margin-bottom: 10%;
+    perspective: 1000px; /* Nécessaire pour l'effet 3D */
+    transition: transform 0.6s ease, box-shadow 0.6s ease; /* Transition fluide */
+    cursor: pointer;
+    
+}
+
+.projet:hover {
+    transform: rotateY(20deg) rotateX(10deg); /* Rotation 3D sur les axes X et Y */
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5); /* Ombre plus intense au survol */
+}
+
+.projetP{
+    margin-top: 0;
+    font-family: 'Arial', sans-serif; 
+    font-size: 16px; 
+    line-height: 1.6; 
+    color: #333; 
+    
+}
+
+#boiteTexte{
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 80%;
+}
+
+#boiteTexte3{
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 80%;
+}
+
+.projetmilieu{
+    width: 30%; 
+    
+    height: auto;
+    background:rgb(255, 255, 255);
+    border-radius: 30px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+    
+    display: flex;         
+    flex-direction: column; 
+    align-items: center; 
+    overflow: hidden; /* Empêche les images de dépasser la boîte */
+    margin-bottom: 10%;
+    perspective: 1000px; /* Nécessaire pour l'effet 3D */
+    transition: transform 0.6s ease, box-shadow 0.6s ease; /* Transition fluide */
+    cursor: pointer;
+    
+}
+
+
+.projetmilieu:hover {
+    transform: rotateY(-20deg) rotateX(10deg); /* Rotation 3D sur les axes X et Y */
+    box-shadow: 0px 25px 25px rgba(0, 0, 0, 0.5); /* Ombre plus intense au survol */
+}
+
+.projemilieuP{
+    margin-left: 20px;
+    font-family: 'Arial', sans-serif; 
+    font-size: 16px; 
+    line-height: 1.6; 
+    color: #333; 
+    
+}
+
+#boiteTexte2{
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 80%;
+}
+
+#Test{
+    height: 1800px;
+}
+
+
+/* Corps */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #BFF1F5;
+    height: auto;
+}
+
+/* Footer */
+
+footer {
+    
+    background-color: #2977d1;
+    height: 100px;
+    
+    /*position: fixed;*/
+    width: 100%;
+    
+}
