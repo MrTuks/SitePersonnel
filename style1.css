@@ -344,6 +344,7 @@ header {
     margin-right: auto; 
     max-width: 1200px;
     width: 90%;
+    padding-bottom: 50px;
     height: auto;
     border-bottom: 1px solid black;  
 }
@@ -359,7 +360,7 @@ header {
 
 #conteneurProjets{
     width: auto; 
-     
+    
     height: auto;
 
     display: flex; 
@@ -396,7 +397,7 @@ header {
     align-items: center; 
     
     overflow: hidden; /* Empêche les images de dépasser la boîte */
-    margin-bottom: 10%;
+    
     perspective: 1000px; /* Nécessaire pour l'effet 3D */
     transition: transform 0.6s ease, box-shadow 0.6s ease; /* Transition fluide */
     cursor: pointer;
@@ -404,7 +405,8 @@ header {
 }
 
 .projet:hover {
-    transform: rotateY(20deg) rotateX(10deg); /* Rotation 3D sur les axes X et Y */
+    height: auto;
+    /*transform: rotateY(20deg) rotateX(10deg); /* Rotation 3D sur les axes X et Y */
     box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5); /* Ombre plus intense au survol */
 }
 
@@ -417,11 +419,70 @@ header {
     
 }
 
+#ampoule{
+    
+    width: 100px;
+}
+
+.conteneurFleche{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+#fleche{
+    margin-top: 20px;
+    width: 25px;
+}
+
+/*Faire disparaitre l'image d'ampoule*/
+.projet:hover #ampoule{
+    height: 0;
+    width: 0;
+    opacity: 0; 
+     
+}
+/*Faire disparaitre l'image de fleche*/
+.projet:hover #fleche{
+    height: 0;
+    width: 0;
+    opacity: 0; 
+    margin-top: 0px;
+     
+}
+/*Faire apparaitre le texte*/
+.projet:hover #boiteTexte p{
+    opacity: 1; 
+    height: auto;
+   
+} 
+
+/*Faire apparaitre le texte*/
+.projet:hover #boiteTexte3 p{
+    opacity: 1; 
+    height: auto;
+} 
+
+
+/*Faire apparaitre le texte*/
+.projet:hover #boiteTexte2 p{
+    opacity: 1; 
+    height: auto;
+} 
+
+
+
 #boiteTexte{
     margin-left: auto;
     margin-right: auto;
     height: auto;
     width: 80%;
+    
+}
+
+#boiteTexte p{
+    height: 0;
+    opacity: 0; /* Initialement caché */
+    
 }
 
 #boiteTexte3{
@@ -431,37 +492,9 @@ header {
     width: 80%;
 }
 
-.projetmilieu{
-    width: 30%; 
-    
-    height: auto;
-    background:rgb(255, 255, 255);
-    border-radius: 30px;
-    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
-    
-    display: flex;         
-    flex-direction: column; 
-    align-items: center; 
-    overflow: hidden; /* Empêche les images de dépasser la boîte */
-    margin-bottom: 10%;
-    perspective: 1000px; /* Nécessaire pour l'effet 3D */
-    transition: transform 0.6s ease, box-shadow 0.6s ease; /* Transition fluide */
-    cursor: pointer;
-    
-}
-
-
-.projetmilieu:hover {
-    transform: rotateY(-20deg) rotateX(10deg); /* Rotation 3D sur les axes X et Y */
-    box-shadow: 0px 25px 25px rgba(0, 0, 0, 0.5); /* Ombre plus intense au survol */
-}
-
-.projemilieuP{
-    margin-left: 20px;
-    font-family: 'Arial', sans-serif; 
-    font-size: 16px; 
-    line-height: 1.6; 
-    color: #333; 
+#boiteTexte3 p{
+    opacity: 0; /* Initialement caché */
+    height: 0;
     
 }
 
@@ -472,8 +505,51 @@ header {
     width: 80%;
 }
 
+#boiteTexte2 p{
+    opacity: 0; /* Initialement caché */
+    height: 0;
+}
+
+/****************toute la section 4**************************/
+
+#section4 {
+    margin-top: 1%; 
+    margin-left: auto;
+    margin-right: auto; 
+    max-width: 1200px;
+    width: 90%;
+    padding-bottom: 50px;
+    height: auto;
+    border-bottom: 1px solid black;  
+}
+
+#boiteReseaux{
+    height: 100px;
+    width:100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+#boiteReseaux img{
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+  
+
+  /* Effet au survol */
+  #boiteReseaux img:hover {
+    transform: translateY(-20px);
+  }
+
+
+
 #Test{
-    height: 1800px;
+    height: auto;
 }
 
 
@@ -489,7 +565,7 @@ body {
 /* Footer */
 
 footer {
-    
+    margin-top: 10%;
     background-color: #2977d1;
     height: 100px;
     
