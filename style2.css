@@ -158,10 +158,15 @@ header {
     
 }
 
-
+h1{
+    text-align: center;
+}
 
 #Test{
     height: auto;
+}
+a, a:visited {
+    color: blue; 
 }
 
 
