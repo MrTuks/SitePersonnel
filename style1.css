@@ -58,13 +58,13 @@ header {
     
 }
 
-#Liens{
+.Liens{
     width: 100%;    
     
 }
 
 /*espace entre les liens*/
-#Liens ul{
+.Liens ul{
     padding: 0;
     display: flex;
     justify-content: space-evenly;
@@ -74,16 +74,16 @@ header {
 }
     
 /*decoration du texte des liens*/    
-#Liens li a {
+.Liens li a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-weight: bold;
     font-size: 16px;
     
 
 }
 
-#Liens li{
+.Liens li{
     width: 150px;
     height: 30px;
     background-color: #2bb993;
@@ -95,11 +95,11 @@ header {
     transition: trasform 0.4s ease, background-color 0.5s ease; 
 }
 
-#Liens li:hover {
+.Liens li:hover {
     transform: scale(1.1); 
     outline: 2px solid white; 
     outline-offset: 2px; 
-    background-color: #59D9BA;
+    background-color: #148f6e;
 
 }
 
@@ -357,7 +357,7 @@ header {
     border-bottom: 1px solid black;  
 }
 
-#titreProjet{
+.titreProjet{
     font-size: 30px;
     margin-top: 1%;
     text-align: center;
@@ -378,7 +378,7 @@ header {
     
 }
 
-#conteneurProjets h2{
+#conteneurProjets h3{
     height: auto;
     width: 100%;
     
@@ -427,7 +427,7 @@ header {
     
 }
 
-#ampoule{
+.ampoule{
     
     width: 100px;
 }
@@ -437,20 +437,19 @@ header {
     justify-content: space-around;
     width: 100%;
 }
-#fleche{
-    margin-top: 20px;
-    width: 25px;
-}
 
+.fleche { 
+    margin-top: 20px; width: 25px; 
+}
 /*Faire disparaitre l'image d'ampoule*/
-.projet:hover #ampoule{
+.projet:hover .ampoule{
     height: 0;
     width: 0;
     opacity: 0; 
      
 }
 /*Faire disparaitre l'image de fleche*/
-.projet:hover #fleche{
+.projet:hover .fleche{
     height: 0;
     width: 0;
     opacity: 0; 
@@ -600,5 +599,5 @@ footer {
     font-family: 'Arial', sans-serif; 
     font-size: 16px; 
     line-height: 1.6; 
-    color: white; 
+    color: #ffffff; 
 }

@@ -58,13 +58,13 @@ header {
     
 }
 
-#Liens{
+.Liens{
     width: 100%;    
     
 }
 
 /*espace entre les liens*/
-#Liens ul{
+.Liens ul{
     padding: 0;
     display: flex;
     justify-content: space-evenly;
@@ -74,7 +74,7 @@ header {
 }
     
 /*decoration du texte des liens*/    
-#Liens li a {
+.Liens li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
@@ -83,7 +83,7 @@ header {
 
 }
 
-#Liens li{
+.Liens li{
     width: 150px;
     height: 30px;
     background-color: #2bb993;
@@ -95,7 +95,7 @@ header {
     transition: trasform 0.4s ease, background-color 0.5s ease; 
 }
 
-#Liens li:hover {
+.Liens li:hover {
     transform: scale(1.1); 
     outline: 2px solid white; 
     outline-offset: 2px; 
@@ -158,7 +158,7 @@ header {
     
 }
 
-h1{
+h2{
     text-align: center;
 }
 
@@ -209,6 +209,6 @@ footer {
     font-family: 'Arial', sans-serif; 
     font-size: 16px; 
     line-height: 1.6; 
-    color: #d8d5d5; 
+    color: #ffffff; 
 }
 
